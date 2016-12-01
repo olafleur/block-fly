@@ -18,6 +18,7 @@ var app = new WebpackDevServer(compiler, {
 
 // Serve static resources
 app.use("/assets", express.static(path.resolve(__dirname, "public/assets")));
+app.use("/editor", express.static(path.resolve(__dirname, "public/editor.html")));
 app.listen(APP_PORT, APP_HOST, () => {
   console.log(`App is now running on http://${APP_HOST}:${APP_PORT}`);
 });

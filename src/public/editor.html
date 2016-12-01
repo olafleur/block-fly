@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr-CA">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link href="assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="assets/site.css" rel="stylesheet" type="text/css">
+  <title>Editor - Block Fly!</title>
+</head>
+
+<body>
+  <h1>Block Fly! Editor</h1>
+  <div id="board">
+    <canvas id="root" width="400" height="400">
+  </div>
+
+  <a href="/">Back to game</a>
+
+  <footer>
+    <a href="mailto:webmaster@cdroulers.com">Christian Droulers</a> 2016 | <a href="https://github.com/cdroulers/block-fly">Source</a>
+  </footer>
+  <script type="text/javascript">
+    // Force `fetch` polyfill to workaround Chrome not displaying request body
+    // in developer tools for the native `fetch`.
+    self.fetch = null;
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-8123708-4', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
